@@ -1,0 +1,126 @@
+body{
+ font-family: 'Open Sans Condensed', sans-serif;
+ background-color: #e7e7fe;
+}
+
+span.first div.jumbotron{
+	background-image: url(img/jumbotron.jpeg);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+span a.haut{
+ color: white;
+
+}
+
+.transition{
+	position: absolute;
+	left: 0;
+	right: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.mots{
+	display: inline-block;
+}
+
+.mots span {
+	text-decoration: none;
+	position: absolute;
+	left: 0;
+	right:0;
+	animation: animate 12s linear infinite;
+	opacity: 0;
+	background-color: rgba(20, 10, 20, 0.9);
+}
+
+@keyframes animate {
+
+	0%{
+		opacity: 0;
+		transform: translateY(-50%);
+	}
+
+
+	2%{
+		opacity: 1;
+		transform: translateY(0%);
+	}
+
+
+	18%{
+		opacity: 1;
+		transform: translateY(0%);
+	}
+
+	20%{
+		opacity: 0;
+		transform: translateY(50%);
+	}
+
+	100%{
+		opacity: 0;
+		transform: translateY(50%);
+	}
+
+}
+
+.mots span:nth-child(1){
+	animation-delay: 0.1s;
+}
+.mots span:nth-child(2){
+	animation-delay: 2s;
+}
+.mots span:nth-child(3){
+	animation-delay: 4s;
+}
+.mots span:nth-child(4){
+	animation-delay: 6s;
+} 
+.mots span:nth-child(5){
+	animation-delay: 8s;
+}
+.mots span:nth-child(6){
+	animation-delay: 10s;
+}
+
+.code{
+	height: 90px;
+	border-radius: 20px;
+
+}
+
+svg.team{
+	height: 30px;
+	color: pink;
+}
+
+svg.clock{
+	height: 30px;
+	color: blue;
+}
+
+svg.smile{
+	height: 30px;
+	border-radius: 20px;
+	color: black;
+	background-color: yellow;
+}
+
+svg.plane{
+	color : orange;
+	height: 30px;
+}
+
+span a.bas{
+ color: white;
+}
+
+
+span.second div.jumbotron{
+background-image: url(img/get_a_job.jpeg);
+background-size: cover;	
+}
+
